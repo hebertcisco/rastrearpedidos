@@ -1,4 +1,5 @@
 # RastrearPedidos
+
 Rastreamento de objetos integrado aos serviços dos Correios
 
 ## Lib
@@ -14,10 +15,21 @@ rastreio("LB498113226SE").then(console.log);
 
 ## Realizando uma consulta via Endpoint
 
+> Curl
+
 ```sh
-curl http://rastrearpedidos.now.sh/api/rastreio/v1/LB498113226SE
+curl --location --request GET 'http://rastrearpedidos.now.sh/api/rastreio/v1/LB498113226SE'
+```
+
+> HTTP
+
+```http
+GET /api/rastreio/v1/LB498113226SE HTTP/1.1
+Host: rastrearpedidos.now.sh
 ```
 
 > URL: [http://rastrearpedidos.now.sh/api/rastreio/v1/LB498113226SE](http://rastrearpedidos.now.sh/api/rastreio/v1/LB498113226SE)
+
 ### Endpoint:
+
 `api/rastreio/v1/[codigo]`
