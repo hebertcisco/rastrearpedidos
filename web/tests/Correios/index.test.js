@@ -1,3 +1,3 @@
 const rastreio = require("../../src/lib/Correios");
 
-rastreio("ON033350344BR").then(console.log);
+rastreio("LB498113226SE").then(console.log);
