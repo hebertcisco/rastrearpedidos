@@ -6,6 +6,7 @@
     "cheerio": "^1.0.0-rc.3",
     "form-data": "^3.0.0",
     "iconv-lite": "^0.6.2",
+    "micro-cors": "^0.1.1",
     "next": "latest",
     "node-fetch": "^2.6.1",
     "react": "^16.7.0",
