@@ -1,9 +1,9 @@
 "use strict";
 
-import FormData from "form-data";
-import cheerio from "cheerio";
-import fetch from "node-fetch";
-import iconv from "iconv-lite";
+const FormData = require("form-data");
+const cheerio = require("cheerio");
+const fetch = require("node-fetch");
+const iconv = require("iconv-lite");
 
 function parseResponse(response) {
   if (!response.ok) {
@@ -65,7 +65,7 @@ function parseError(error) {
   throw new Error(error.message);
 }
 
-export default (codigo) => {
+module.exports = (codigo) => {
   const form = new FormData();
   form.append("objetos", codigo);
   return fetch(
