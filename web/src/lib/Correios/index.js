@@ -1,8 +1,8 @@
 "use strict";
 
-import rastreio from "./service/correios";
+const rastreio = require("./service/correios");
 
-export default async (codigo) => {
+module.exports = async (codigo) => {
   if (codigo.length !== 13) {
     return {
       error: "validation_error",
