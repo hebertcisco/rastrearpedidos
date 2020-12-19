@@ -14,7 +14,7 @@ const TopNav: React.FC<ITopNav> = ({ codigo, social }) => {
             <div className="col-md-6 d-flex align-items-center">
               <p className="mb-0 phone pl-md-2">
                 <a href="#" className="mr-2">
-                  <span className="fas fa-paste mr-1"></span> {codigo}
+                  <span className="fa fa-paste mr-1"></span> {codigo}
                 </a>
               </p>
             </div>
