@@ -28,7 +28,7 @@ const Nav = () => {
             <ul className="navbar-nav ml-auto">
               <li className="nav-item active">
                 <Link href="/">
-                  <a className="nav-link">Home</a>
+                  <a className="nav-link">Início</a>
                 </Link>
               </li>
               <li className="nav-item">
