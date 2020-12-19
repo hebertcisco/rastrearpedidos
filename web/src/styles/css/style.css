@@ -10509,12 +10509,12 @@ a {
   -webkit-transition: 0.3s all ease;
   -o-transition: 0.3s all ease;
   transition: 0.3s all ease;
-  color: #00bd56;
+  color: #007bff;
 }
 a:hover,
 a:focus {
   text-decoration: none;
-  color: #00bd56;
+  color: #007bff;
   outline: none !important;
 }
 
@@ -10537,7 +10537,7 @@ h5,
   position: relative;
   z-index: 0;
   width: 100%;
-  background: #00bd56;
+  background: #007bff;
   background: #207dff;
   background: -moz-linear-gradient(45deg, #207dff 0%, #00bd55 100%);
   background: -webkit-gradient(
@@ -10575,8 +10575,8 @@ h5,
   color: #fff;
 }
 .social-media p a:hover {
-  background: #00bd56;
-  border-color: #00bd56;
+  background: #007bff;
+  border-color: #007bff;
 }
 .social-media p a:hover span {
   color: #fff;
@@ -10605,7 +10605,7 @@ h5,
   line-height: 1;
 }
 .ftco-navbar-light .navbar-brand span {
-  color: #00bd56;
+  color: #007bff;
 }
 .ftco-navbar-light .navbar-brand:hover,
 .ftco-navbar-light .navbar-brand:focus {
@@ -10640,7 +10640,7 @@ h5,
   height: 2px;
   bottom: 0px;
   left: 0;
-  background-color: #00bd56;
+  background-color: #007bff;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -ms-transform: scaleX(0);
@@ -10651,11 +10651,11 @@ h5,
   z-index: -1;
 }
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-  color: #00bd56;
+  color: #007bff;
 }
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover:before {
   visibility: visible;
-  background-color: #00bd56;
+  background-color: #007bff;
   -webkit-transform: scaleX(1);
   -ms-transform: scaleX(1);
   transform: scaleX(1);
@@ -10690,7 +10690,7 @@ h5,
 }
 .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu .dropdown-item:hover,
 .ftco-navbar-light .navbar-nav > .nav-item .dropdown-menu .dropdown-item:focus {
-  background: #00bd56;
+  background: #007bff;
   color: #fff;
 }
 @media (max-width: 991.98px) {
@@ -10703,7 +10703,7 @@ h5,
 }
 .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
   color: #fff;
-  background: #00bd56;
+  background: #007bff;
   border-radius: 0px;
 }
 @media (max-width: 767.98px) {
@@ -10715,16 +10715,16 @@ h5,
 @media (max-width: 991.98px) {
   .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
     color: #fff;
-    background: #00bd56;
+    background: #007bff;
     border-radius: 4px;
   }
 }
 .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-  color: #00bd56;
+  color: #007bff;
 }
 .ftco-navbar-light .navbar-nav > .nav-item.active > a:before {
   visibility: visible;
-  background-color: #00bd56;
+  background-color: #007bff;
   -webkit-transform: scaleX(1);
   -ms-transform: scaleX(1);
   transform: scaleX(1);
@@ -10866,11 +10866,11 @@ h5,
   }
 }
 .hero-wrap .slider-text h1 span {
-  color: #00bd56;
+  color: #007bff;
 }
 .hero-wrap .slider-text .subheading {
   font-size: 15px;
-  color: #00bd56;
+  color: #007bff;
   text-transform: uppercase;
   font-family: "Montserrat", Arial, sans-serif;
   font-weight: 700;
@@ -10904,11 +10904,11 @@ h5,
 }
 .hero-wrap .slider-text .breadcrumbs span a:hover,
 .hero-wrap .slider-text .breadcrumbs span a:focus {
-  color: #00bd56;
+  color: #007bff;
 }
 .hero-wrap .slider-text .breadcrumbs span a:hover i,
 .hero-wrap .slider-text .breadcrumbs span a:focus i {
-  color: #00bd56;
+  color: #007bff;
 }
 
 .owl-carousel.owl-drag .owl-item {
@@ -10937,7 +10937,7 @@ h5,
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   margin-top: -10px;
-  color: #00bd56 !important;
+  color: #007bff !important;
   -moz-transition: all 0.7s ease;
   -o-transition: all 0.7s ease;
   -webkit-transition: all 0.7s ease;
@@ -11021,7 +11021,7 @@ h5,
 }
 
 .bg-primary {
-  background: #00bd56 !important;
+  background: #007bff !important;
 }
 
 .btn {
@@ -11041,23 +11041,23 @@ h5,
   outline: none;
 }
 .btn.btn-primary {
-  background: #00bd56;
-  border: 1px solid #00bd56;
+  background: #007bff;
+  border: 1px solid #007bff;
   color: #fff;
 }
 .btn.btn-primary:hover {
-  border: 1px solid #00bd56;
+  border: 1px solid #007bff;
   background: transparent;
-  color: #00bd56;
+  color: #007bff;
 }
 .btn.btn-primary.btn-outline-primary {
-  border: 1px solid #00bd56;
+  border: 1px solid #007bff;
   background: transparent;
-  color: #00bd56;
+  color: #007bff;
 }
 .btn.btn-primary.btn-outline-primary:hover {
   border: 1px solid transparent;
-  background: #00bd56;
+  background: #007bff;
   color: #fff;
 }
 .btn.btn-white {
@@ -11106,7 +11106,7 @@ h5,
 }
 .icon-video span {
   font-size: 20px;
-  color: #00bd56;
+  color: #007bff;
 }
 
 .ftco-intro .services {
@@ -11150,7 +11150,7 @@ h5,
 }
 .services .icon span {
   font-size: 40px;
-  color: #00bd56;
+  color: #007bff;
 }
 .services .media-body {
   margin-top: 40px;
@@ -11179,7 +11179,7 @@ h5,
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: #00bd56;
+  background: #007bff;
   -webkit-box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
@@ -11189,7 +11189,7 @@ h5,
 }
 .services:hover,
 .services.active {
-  background: #00bd56;
+  background: #007bff;
 }
 .services:hover .icon,
 .services.active .icon {
@@ -11210,7 +11210,7 @@ h5,
 }
 .services:hover .btn-custom span,
 .services.active .btn-custom span {
-  color: #00bd56;
+  color: #007bff;
 }
 @media (max-width: 991.98px) {
   .services {
@@ -11226,7 +11226,7 @@ h5,
   width: 70px;
   height: 70px;
   border-radius: 50%;
-  background: #00bd56;
+  background: #007bff;
   -webkit-box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 10px 30px -4px rgba(0, 0, 0, 0.15);
@@ -11303,7 +11303,7 @@ h5,
   height: 70px;
   content: "";
   z-index: 1;
-  background: #00bd56;
+  background: #007bff;
   -webkit-transform: translate(50%, 50%);
   -ms-transform: translate(50%, 50%);
   transform: translate(50%, 50%);
@@ -11385,7 +11385,7 @@ h5,
   margin-bottom: 5px;
 }
 .staff .text .position {
-  color: #00bd56;
+  color: #007bff;
   display: block;
   font-weight: 600;
   display: inline-block;
@@ -11418,7 +11418,7 @@ h5,
   color: #fff;
   width: 30px;
   height: 30px;
-  background: #00bd56;
+  background: #007bff;
   background: #207dff;
   background: -moz-linear-gradient(45deg, #207dff 0%, #00bd55 100%);
   background: -webkit-gradient(
@@ -11454,7 +11454,7 @@ h5,
 }
 .staff:hover .text,
 .staff:focus .text {
-  background: #00bd56;
+  background: #007bff;
   color: rgba(255, 255, 255, 0.8);
 }
 .staff:hover .text h3,
@@ -11484,7 +11484,7 @@ h5,
   overflow-x: hidden;
   position: relative;
   padding: 4em 0;
-  background: #00bd56;
+  background: #007bff;
 }
 @media (max-width: 1199.98px) {
   .ftco-counter {
@@ -11632,7 +11632,7 @@ textarea.form-control {
 }
 .block-7 .excerpt {
   margin-bottom: 0px;
-  color: #00bd56;
+  color: #007bff;
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
@@ -11668,7 +11668,7 @@ textarea.form-control {
 }
 .block-7 .btn-primary:hover,
 .block-7 .btn-primary:focus {
-  background: #00bd56 !important;
+  background: #007bff !important;
   color: #fff;
 }
 .block-7:hover,
@@ -11795,7 +11795,7 @@ textarea.form-control {
   padding: 7em 0;
 }
 .footer a {
-  color: #00bd56;
+  color: #007bff;
 }
 .footer p {
   color: rgba(255, 255, 255, 0.6);
@@ -11818,7 +11818,7 @@ textarea.form-control {
   content: "";
   width: 40px;
   height: 4px;
-  background: #00bd56;
+  background: #007bff;
 }
 .footer ul.list-unstyled li a {
   color: rgba(255, 255, 255, 0.7);
@@ -11863,7 +11863,7 @@ textarea.form-control {
 }
 .footer .ftco-footer-social li a {
   background: rgba(255, 255, 255, 0.1);
-  color: #00bd56;
+  color: #007bff;
 }
 
 .ftco-footer-social li {
@@ -11901,7 +11901,7 @@ textarea.form-control {
 }
 .footer-small-nav > li a:hover,
 .footer-small-nav > li a:focus {
-  color: #00bd56;
+  color: #007bff;
 }
 
 @-webkit-keyframes pulse {
@@ -11938,7 +11938,7 @@ textarea.form-control {
   font-size: 12px;
   display: block;
   font-weight: 600;
-  color: #00bd56;
+  color: #007bff;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -11975,7 +11975,7 @@ textarea.form-control {
 }
 
 .aside-stretch-right {
-  background: #00bd56;
+  background: #007bff;
 }
 .aside-stretch-right:after {
   position: absolute;
@@ -11984,7 +11984,7 @@ textarea.form-control {
   bottom: 0;
   content: "";
   width: 360%;
-  background: #00bd56;
+  background: #007bff;
 }
 @media (max-width: 767.98px) {
   .aside-stretch-right {
@@ -12095,7 +12095,7 @@ textarea.form-control {
   background: rgba(255, 255, 255, 0.1);
 }
 .testimony-section .owl-dots .owl-dot.active {
-  background: #00bd56;
+  background: #007bff;
 }
 
 .testimony-wrap {
@@ -12116,7 +12116,7 @@ textarea.form-control {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background: #00bd56;
+  background: #007bff;
 }
 .testimony-wrap .icon span {
   color: #fff;
@@ -12211,7 +12211,7 @@ textarea.form-control {
 }
 
 .ftco-faqs button[aria-expanded="true"] {
-  background-color: #00bd56;
+  background-color: #007bff;
   color: #fff !important;
 }
 .ftco-faqs button[aria-expanded="true"] .fa {
@@ -12313,10 +12313,10 @@ textarea.form-control {
 .blog-entry .text .heading a:hover,
 .blog-entry .text .heading a:focus,
 .blog-entry .text .heading a:active {
-  color: #00bd56;
+  color: #007bff;
 }
 .blog-entry .text .meta-chat {
-  color: #00bd56;
+  color: #007bff;
 }
 .blog-entry .text .read {
   color: #000000;
@@ -12391,7 +12391,7 @@ textarea.form-control {
 }
 .block-27 ul li.active a,
 .block-27 ul li.active span {
-  background: #00bd56;
+  background: #007bff;
   color: #fff;
   border: 1px solid transparent;
 }
@@ -12428,13 +12428,13 @@ textarea.form-control {
   color: #000000;
 }
 .dbox p a {
-  color: #00bd56;
+  color: #007bff;
 }
 .dbox .icon {
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: #00bd56;
+  background: #007bff;
   margin: 0 auto;
   margin-bottom: 20px;
 }
@@ -12447,7 +12447,7 @@ textarea.form-control {
 }
 
 .contactForm .label {
-  color: #00bd56 !important;
+  color: #007bff !important;
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 600;
@@ -12487,7 +12487,7 @@ textarea.form-control {
 }
 .contactForm .form-control:focus,
 .contactForm .form-control:active {
-  border-color: #00bd56 !important;
+  border-color: #007bff !important;
 }
 
 .contactForm textarea.form-control {
@@ -12523,7 +12523,7 @@ textarea.form-control {
 .block-21 .text .heading a:hover,
 .block-21 .text .heading a:active,
 .block-21 .text .heading a:focus {
-  color: #00bd56;
+  color: #007bff;
 }
 .block-21 .text .meta > div {
   display: inline-block;
@@ -12688,15 +12688,15 @@ textarea.form-control {
 .sidelink li a:hover,
 .sidelink li a:focus {
   outline: none;
-  color: #00bd56;
+  color: #007bff;
 }
 .categories li.active a,
 .sidelink li.active a {
-  color: #00bd56;
+  color: #007bff;
 }
 .categories li.active a span,
 .sidelink li.active a span {
-  color: #00bd56;
+  color: #007bff;
 }
 
 #ftco-loader {
