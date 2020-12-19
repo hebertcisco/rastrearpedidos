@@ -3,14 +3,23 @@
   "version": "1.0.0",
   "description": "Aplicação/API para rastreamento de pedidos online",
   "dependencies": {
+    "@vercel/node": "^1.8.4",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
     "cheerio": "^1.0.0-rc.3",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "firebase": "^7.24.0",
     "form-data": "^3.0.0",
     "iconv-lite": "^0.6.2",
     "micro-cors": "^0.1.1",
+    "mongodb": "^3.6.1",
     "next": "latest",
+    "next-connect": "^0.9.0",
     "node-fetch": "^2.6.1",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "styled-components": "^5.2.1"
   },
   "scripts": {
     "dev": "next",
@@ -39,6 +48,12 @@
   ],
   "homepage": "http://rastrearpedidos.now.sh/",
   "devDependencies": {
+    "@types/next": "^9.0.0",
+    "@types/node": "^14.11.10",
+    "@types/react": "^16.9.53",
+    "@types/react-dom": "^16.9.10",
+    "@types/styled-components": "^5.1.4",
+    "next-images": "^1.6.0",
     "typescript": "^4.1.3"
   }
 }
