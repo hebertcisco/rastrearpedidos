@@ -56,20 +56,10 @@ const Footer: React.FC<IFooter> = ({ title, desc, social, projects, help }) => {
                     </h3>
                     <div className="meta">
                       <div>
-                        <a href="#">
-                          <span className="icon-calendar"></span>{" "}
-                          {projects.date}
-                        </a>
+                        <a href="#">{projects.date}</a>
                       </div>
                       <div>
-                        <a href="#">
-                          <span className="icon-person"></span> {projects.place}
-                        </a>
-                      </div>
-                      <div>
-                        <a href="#">
-                          <span className="icon-chat"></span> 19
-                        </a>
+                        <a href="#">{projects.place}</a>
                       </div>
                     </div>
                   </div>
