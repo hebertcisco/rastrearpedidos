@@ -1,6 +1,12 @@
 import React from "react";
+import { useRouter } from "next/router";
 
 const Hero = () => {
+  const router = useRouter();
+  const handleRastrear = (e) => {
+    e.preventDefault();
+    router.push(`/rastreio?codigo=`);
+  };
   return (
     <div
       className="hero-wrap js-fullheight"
@@ -13,7 +19,7 @@ const Hero = () => {
           className="input"
           placeholder="Digite seu código de rastreio"
         />
-        <div className="searchbtn">
+        <div className="searchbtn" onClick={handleRastrear}>
           <i className="fa fa-search"></i>
         </div>
       </div>
