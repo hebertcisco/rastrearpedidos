@@ -26,4 +26,14 @@ interface IFooter {
   projects?: IProject[];
   help?: ISocial[];
 }
-export { ISocial, ILink, IProject, IFooter };
+interface ICode {
+  codigo: string | string[];
+}
+interface IRastreio {
+  cidade: string;
+  data: string;
+  dataHora: string;
+  descricao: string;
+  uf: string;
+}
+export { ISocial, ILink, IProject, IFooter, ICode, IRastreio };
