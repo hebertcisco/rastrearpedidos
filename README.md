@@ -13,12 +13,12 @@ const rastreio = require("../../src/lib/Correios");
 rastreio("LB498113226SE").then(console.log);
 ```
 
-## Realizando uma consulta via Endpoint
+## Realizando uma consulta via Endpoint da API
 
 > Curl
 
 ```sh
-curl --location --request GET 'http://rastrearpedidos.now.sh/api/rastreio/v1/LB498113226SE'
+curl --location --request GET 'https://rastrearpedidos.com.br/api/rastreio/v1/LB498113226SE'
 ```
 
 > HTTP
@@ -28,8 +28,18 @@ GET /api/rastreio/v1/LB498113226SE HTTP/1.1
 Host: rastrearpedidos.now.sh
 ```
 
-> URL: [http://rastrearpedidos.now.sh/api/rastreio/v1/LB498113226SE](http://rastrearpedidos.now.sh/api/rastreio/v1/LB498113226SE)
+> URL: [https://rastrearpedidos.com.br/api/rastreio/v1/LB498113226SE](https://rastrearpedidos.com.br/api/rastreio/v1/LB498113226SE)
 
 ### Endpoint:
 
 `api/rastreio/v1/[codigo]`
+
+
+## Realizando uma consulta via Endpoint do site
+
+> URL: [https://rastrearpedidos.com.br/rastreio?codigo=LB498113226SE](https://rastrearpedidos.com.br/rastreio?codigo=LB498113226SE)
+
+### Endpoint:
+
+`rastreio?codigo=[codigo]`
+
