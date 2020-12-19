@@ -27,9 +27,9 @@ const Nav = () => {
           <div className="collapse navbar-collapse" id="ftco-nav">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item active">
-                <Link href="/">
-                  <a className="nav-link">Início</a>
-                </Link>
+                
+                  <a href="/" className="nav-link">Início</a>
+                
               </li>
               <li className="nav-item">
                 <Link href="/sobre">
