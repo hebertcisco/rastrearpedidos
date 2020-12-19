@@ -91,6 +91,8 @@ export default class CustomDocument extends Document<DocumentProps> {
               integrity="sha256-C0JRED8ZsAPncG/uuSNsaCMre27ey9IUHF08419OJp8="
               crossOrigin="anonymous"
             ></script>
+
+            <script src="static/js/bootstrap.min.js"></script>
           </>
         </Head>
         <body>
