@@ -79,11 +79,11 @@ export default class CustomApp extends App<AppProps> {
 
           <link
             rel="stylesheet"
-            href="https://rastrearpedidos.web.app/css/style.css"
+            href="https://static.rastrearpedidos.com.br/css/style.css"
           />
           <link
             rel="stylesheet"
-            href="https://rastrearpedidos.web.app/css/404.css"
+            href="https://static.rastrearpedidos.com.br/css/404.css"
           />
 
           <title>
@@ -93,22 +93,22 @@ export default class CustomApp extends App<AppProps> {
           <link
             rel="icon"
             type="image/svg+xml"
-            href="https://rastrearpedidos.web.app/svg/mail-307328.svg"
+            href="https://static.rastrearpedidos.com.br/svg/mail-307328.svg"
           />
 
           <link rel="canonical" href="https://rastrearpedidos.com.br" />
           <meta
             property="og:image"
-            content="https://rastrearpedidos.web.app/svg/mail-307328.svg"
+            content="https://static.rastrearpedidos.com.br/svg/mail-307328.svg"
           />
           <meta
-            content="https://rastrearpedidos.web.app/svg/mail-307328.svg"
+            content="https://static.rastrearpedidos.com.br/svg/mail-307328.svg"
             property="og:image"
           />
           <link
             rel="icon"
             type="image/svg+xml"
-            href="https://rastrearpedidos.web.app/svg/mail-307328.svg"
+            href="https://static.rastrearpedidos.com.br/svg/mail-307328.svg"
           />
 
           <meta property="og:locale" content="pt-BR" />
