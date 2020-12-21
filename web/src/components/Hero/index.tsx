@@ -15,7 +15,10 @@ const Hero = () => {
       alert("Favor insira um código válido!");
       return false;
     }
-
+    if (code.length !== 13) {
+      alert("O código de rastreio deve conter 13 caracteres.");
+      return false;
+    }
     return valid;
   };
   async function handleRastrear(event: FormEvent) {
@@ -24,14 +27,16 @@ const Hero = () => {
       try {
         router.push(`/rastreio?codigo=${code}`);
       } catch {
-        alert("erro");
+        return new Error();
       }
     }
   }
   return (
     <div
       className="hero-wrap js-fullheight"
-      style={{ backgroundImage: `url('static/img/bg_1.jpg')` }}
+      style={{
+        backgroundImage: `url('https://rastrearpedidos.web.app/img/bg_1.jpg')`,
+      }}
       data-stellar-background-ratio="0.5"
     >
       <form className="wrapper" onSubmit={handleRastrear}>
