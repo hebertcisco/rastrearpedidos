@@ -1,5 +1,3 @@
-import "../../styles/css/style.css";
-
 import { useEffect, useState } from "react";
 
 import Nav from "../../components/Nav";
