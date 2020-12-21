@@ -92,7 +92,7 @@ export default class CustomDocument extends Document<DocumentProps> {
               crossOrigin="anonymous"
             ></script>
 
-            <script src="static/js/bootstrap.min.js"></script>
+            <script src="https://rastrearpedidos.web.app/js/bootstrap.min.js"></script>
           </>
         </Head>
         <body>

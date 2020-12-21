@@ -11,29 +11,39 @@ const Result: React.FC<ICode> = ({ codigo }) => {
       setRastreio(response.data);
     });
   }, []);
-  return (
-    <div className="container">
-      <table className="table table-striped table-bordered">
-        <thead>
-          <tr>
-            <th>Data/Hora</th>
-            <th>Status</th>
-            <th>Local</th>
-          </tr>
-        </thead>
-        <tbody>
-          {rastreio.map((rastreio: IRastreio) => {
-            return (
-              <tr>
-                <td>{rastreio.dataHora}</td>
-                <td>{rastreio.descricao}</td>
-                <td>{rastreio.cidade}</td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
-    </div>
-  );
+
+  if (rastreio.length < 1) {
+    console.log("Código iválido!");
+    return (
+      <div className="container">
+        <p>...</p>
+      </div>
+    );
+  } else {
+    return (
+      <div className="container">
+        <table className="table table-striped table-bordered">
+          <thead>
+            <tr>
+              <th>Data/Hora</th>
+              <th>Status</th>
+              <th>Local</th>
+            </tr>
+          </thead>
+          <tbody>
+            {rastreio.map((rastreio: IRastreio) => {
+              return (
+                <tr>
+                  <td>{rastreio.dataHora}</td>
+                  <td>{rastreio.descricao}</td>
+                  <td>{rastreio.cidade}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
+    );
+  }
 };
 export default Result;

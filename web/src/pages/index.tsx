@@ -1,12 +1,10 @@
-import "../styles/css/style.css";
-
 import Footer from "../components/Footer/index";
 import Hero from "../components/Hero/index";
 import Nav from "../components/Nav";
 
 export default function Home(props: any) {
   return (
-    <main>
+    <>
       <Nav />
       <Hero />
       <Footer
@@ -16,7 +14,7 @@ export default function Home(props: any) {
         projects={props.all_projects.projects}
         help={props.footer_data.help}
       />
-    </main>
+    </>
   );
 }
 export async function getStaticProps() {
@@ -34,6 +32,7 @@ export async function getStaticProps() {
     `${process.env.WEB_URI}/api/resource/v1?doc=social&collection=api`
   );
   const social_data = await res_social_data.json();
+
   try {
     return {
       props: {

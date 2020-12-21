@@ -1,11 +1,12 @@
-import "../styles/css/404.css";
-
 import Link from "next/link";
 
 export default function Page404(props: any) {
   return (
     <body style={{ backgroundColor: "#2f3242" }}>
-      <img src="static/img/travolta_404.gif" alt="Travolta 404" />
+      <img
+        src="https://rastrearpedidos.web.app/img/travolta_404.gif"
+        alt="Travolta 404"
+      />
       <div className="message-box">
         <h1>404</h1>
         <p>Página não encontrada</p>

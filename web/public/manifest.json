@@ -1,0 +1,20 @@
+{
+  "name": "Rastrear Pedidos",
+  "short_name": "Rastrear Pedidos",
+  "icons": [
+    {
+      "src": "https://rastrearpedidos.web.app/svg/mail-307328.svg",
+      "sizes": "192x192",
+      "type": "image/svg"
+    },
+    {
+      "src": "https://rastrearpedidos.web.app/svg/mail-307328.svg",
+      "sizes": "512x512",
+      "type": "image/svg"
+    }
+  ],
+  "theme_color": "#057bfd",
+  "background_color": "#057bfd",
+  "display": "standalone",
+  "default_locale": "pt_BR"
+}
