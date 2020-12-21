@@ -87,6 +87,85 @@ export default class CustomApp extends App<AppProps> {
             rel="stylesheet"
             href="https://rastrearpedidos.web.app/css/404.css"
           />
+
+          <title>
+            Rastrear Pedidos - Rastreamento de objetos integrado aos serviços
+            dos Correios
+          </title>
+          <link
+            rel="icon"
+            type="image/svg+xml"
+            href="https://rastrearpedidos.web.app/svg/mail-307328.svg"
+          />
+
+          <link rel="canonical" href="https://rastrearpedidos.com.br" />
+          <meta
+            property="og:image"
+            content="https://rastrearpedidos.web.app/svg/mail-307328.svg"
+          />
+          <meta
+            content="https://rastrearpedidos.web.app/svg/mail-307328.svg"
+            property="og:image"
+          />
+          <link
+            rel="icon"
+            type="image/svg+xml"
+            href="https://rastrearpedidos.web.app/svg/mail-307328.svg"
+          />
+
+          <meta property="og:locale" content="pt-BR" />
+          <meta property="og:title" content="Rastrear Pedidos" />
+          <meta
+            property="og:description"
+            content="Rastreamento de objetos integrado aos serviços dos Correios"
+          />
+          <link rel="shortcut icon" href="favicon.ico" />
+          <link rel="manifest" href="manifest.json" />
+          <link rel="icon" href="favicon.ico" />
+
+          <meta name="theme-color" content="#057bfd" />
+          <meta
+            name="description"
+            content="Rastreamento de objetos integrado aos serviços dos Correios"
+          />
+
+          <meta name="keywords" content="correio, rastrear, rastreamento" />
+
+          <meta property="og:url" content="https://rastrearpedidos.com.br" />
+          <base href="/" />
+          <link
+            href="https://plus.google.com/+hebertsoftware"
+            rel="publisher"
+          />
+          <meta content="index, follow" name="robots" />
+          <meta content="1 days" name="revisit-after" />
+          <meta content="global" name="distribution" />
+          <meta content="general" name="rating" />
+          <meta content="website" property="og:type" />
+          <meta content="Rastrear Pedidos" property="og:site_name" />
+          <meta content="pt-BR" property="og:locale" />
+          <meta content="en-US" property="og:locale:alternate" />
+          <meta content="pt" property="og:locale:alternate" />
+          <meta content="en_US" property="og:locale:alternate" />
+          <meta content="id_ID" property="og:locale:alternate" />
+          <meta content="Rastrear Pedidos" property="og:title" />
+          <meta content="https://rastrearpedidos.com.br" property="og:url" />
+          <meta
+            content="Rastreamento de objetos integrado aos serviços dos Correios"
+            property="og:description"
+          />
+          <meta content="@hebertbarros" name="twitter:site" />
+          <meta content="@hebertsoftware" name="twitter:creator" />
+          <meta content="rastrearpedidos.com.br" name="twitter:domain" />
+
+          <meta
+            content="https://rastrearpedidos.web.app/svg/mail-307328.svg"
+            property="og:image"
+          />
+          <meta content="512" property="og:image:width" />
+          <meta content="512" property="og:image:height" />
+          <meta content="id" name="geo.country" />
+          <meta content="Brazil" name="geo.placename" />
         </Head>
 
         <Component {...pageProps} />

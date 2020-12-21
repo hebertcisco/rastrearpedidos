@@ -36,4 +36,13 @@ interface IRastreio {
   descricao: string;
   uf: string;
 }
-export { ISocial, ILink, IProject, IFooter, ICode, IRastreio };
+interface ISeo {
+  title?: string;
+  canonical?: string;
+  og_image?: string;
+  description?: string;
+  themeColor?: string;
+  keywords?: string;
+  domain?: string;
+}
+export { ISocial, ILink, IProject, IFooter, ICode, IRastreio, ISeo };
