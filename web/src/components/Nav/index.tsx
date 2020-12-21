@@ -11,7 +11,7 @@ const Nav = () => {
         <div className="container">
           <a className="navbar-brand" href="/">
             <img
-              src="https://rastrearpedidos.web.app/svg/mail-307328.svg"
+              src="https://static.rastrearpedidos.com.br/svg/mail-307328.svg"
               alt=""
             />
             Rastrear Pedidos
