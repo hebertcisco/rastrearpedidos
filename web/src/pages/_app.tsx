@@ -129,7 +129,10 @@ export default class CustomApp extends App<AppProps> {
             content="Rastreamento de objetos integrado aos serviços dos Correios"
           />
 
-          <meta name="keywords" content="correio, rastrear, rastreamento" />
+          <meta
+            name="keywords"
+            content="correio, rastrear, rastreamento, rastreamento correios, rastreamento correio, rastreamento de correios, rastreamento do correios, rastreamento dos correios, rastreamento de correio, sedex rastreamento, rastreamento mercado livre, jadlog rastreamento, codigo rastreamento, rastreamento objeto, rastreamento objetos, código rastreamento, codigo de rastreamento, rastreamento de objetos, rastreamento transportadora, sequoia rastreamento, rastreamento shopee, correios rastreamento fácil"
+          />
 
           <meta property="og:url" content="https://rastrearpedidos.com.br" />
           <base href="/" />
