@@ -78,6 +78,15 @@ export default class CustomApp extends App<AppProps> {
             integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
             crossOrigin="anonymous"
           ></link>
+
+          <link
+            rel="stylesheet"
+            href="https://rastrearpedidos.web.app/css/style.css"
+          />
+          <link
+            rel="stylesheet"
+            href="https://rastrearpedidos.web.app/css/404.css"
+          />
         </Head>
 
         <Component {...pageProps} />

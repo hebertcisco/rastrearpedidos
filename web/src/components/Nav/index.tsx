@@ -10,7 +10,10 @@ const Nav = () => {
       >
         <div className="container">
           <a className="navbar-brand" href="/">
-            <img src="static/svg/mail-307328.svg" alt="" />
+            <img
+              src="https://rastrearpedidos.web.app/svg/mail-307328.svg"
+              alt=""
+            />
             Rastrear Pedidos
           </a>
           <button
@@ -27,9 +30,9 @@ const Nav = () => {
           <div className="collapse navbar-collapse" id="ftco-nav">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item active">
-                
-                  <a href="/" className="nav-link">Início</a>
-                
+                <a href="/" className="nav-link">
+                  Início
+                </a>
               </li>
               <li className="nav-item">
                 <Link href="/sobre">

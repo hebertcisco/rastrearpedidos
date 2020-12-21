@@ -1,5 +1,3 @@
-import "../styles/css/style.css";
-
 import Footer from "../components/Footer/index";
 import Hero from "../components/Hero/index";
 import Nav from "../components/Nav";

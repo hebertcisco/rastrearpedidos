@@ -1,6 +1,7 @@
 import { ICode, ISocial } from "../../utils/types";
 
 import React from "react";
+
 interface ITopNav {
   codigo: ICode;
   social: ISocial[];
