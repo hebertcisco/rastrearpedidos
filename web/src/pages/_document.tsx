@@ -26,6 +26,24 @@ export default class CustomDocument extends Document<DocumentProps> {
     return { ...page, styleTags };
   }
 
+  runFirebase() {
+    return {
+      __html: `
+      var firebaseConfig = {
+        apiKey: ${process.env.FIREBASE_API_KEY},
+        authDomain: ${process.env.FIREBASE_AUTH_DOMAIN},
+        databaseURL: ${process.env.FIREBASE_DATABASE_URL},
+        projectId: ${process.env.FIREBASE_PROJECT_ID},
+        storageBucket: ${process.env.FIREBASE_STORAGE_BUCKET},
+        messagingSenderId: ${process.env.FIREBASE_MESSAGING_SENDER_ID},
+        appId: ${process.env.FIREBASE_APP_ID},
+        measurementId: ${process.env.FIREBASE_MEASUREMENT_ID}
+      };
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      `,
+    };
+  }
   public render() {
     const { styleTags } = this.props;
     return (
@@ -34,6 +52,10 @@ export default class CustomDocument extends Document<DocumentProps> {
           {styleTags}
 
           <>
+            <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+
+            <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+            <script dangerouslySetInnerHTML={this.runFirebase()} />
             <script
               src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"
               integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU"
