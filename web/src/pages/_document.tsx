@@ -52,6 +52,11 @@ export default class CustomDocument extends Document<DocumentProps> {
           {styleTags}
 
           <>
+            <script
+              data-ad-client={`${process.env.ADS_CLIENT}`}
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+            ></script>
             <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
 
             <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
