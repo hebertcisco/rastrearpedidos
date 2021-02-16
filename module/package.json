@@ -1,6 +1,6 @@
 {
   "name": "rastrearpedidos",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Rastreamento de objetos integrado aos serviços dos Correios",
   "main": "index.js",
   "scripts": {
