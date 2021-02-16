@@ -1,6 +1,6 @@
 "use strict";
 
-const rastreio = require("../../../../module/lib/Correios/service/correios");
+const rastreio = require("./lib/Correios/service/correios");
 
 module.exports = async (codigo) => {
   if (codigo.length !== 13) {
