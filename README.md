@@ -9,7 +9,7 @@ Rastreamento de objetos integrado aos serviços dos Correios
 > Acesse o exemplo em `tests/Correios/index.test.js`
 
 ```js
-const rastreio = require("../../src/lib/Correios");
+const rastreio = require("rastrearpedidos");
 rastreio("LB498113226SE").then(console.log);
 ```
 
