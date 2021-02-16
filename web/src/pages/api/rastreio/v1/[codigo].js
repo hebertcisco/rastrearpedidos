@@ -1,5 +1,5 @@
 import microCors from "micro-cors";
-import rastreio from "../../../../lib/Correios";
+import rastreio from "rastrearpedidos";
 
 const CACHE_CONTROL_HEADER_VALUE =
   "max-age=0, s-maxage=86400, stale-while-revalidate, public";

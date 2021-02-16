@@ -1,0 +1,32 @@
+{
+  "name": "rastrearpedidos",
+  "version": "0.0.1",
+  "description": "Rastreamento de objetos integrado aos serviços dos Correios",
+  "main": "index.js",
+  "scripts": {
+    "test": "node tests/Correios/index.test.js"
+  },
+  "keywords": [
+    "javascript",
+    "typescript",
+    "react-native",
+    "aws-lambda",
+    "nextjs",
+    "promise",
+    "correios",
+    "busca",
+    "correios-rastreio",
+    "rastreio",
+    "rastreamento",
+    "vercel",
+    "vercel-serverless-functions"
+  ],
+  "author": "Hebert F Barros",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.5",
+    "form-data": "^4.0.0",
+    "iconv-lite": "^0.6.2",
+    "node-fetch": "^2.6.1"
+  }
+}
