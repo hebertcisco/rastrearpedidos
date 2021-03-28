@@ -1,6 +1,11 @@
-# RastrearPedidos
+<p align="center">
+ <img width="100px" src="https://rastrearpedidos.com.br/images/favicon.png" align="center" alt=":package: RastrearPedidos" />
+ <h2 align="center">:package: RastrearPedidos</h2>
+ <p align="center">Serviço de rastreamento de objetos integrado aos serviços dos Correios</p>
+</p>
 
-Rastreamento de objetos integrado aos serviços dos Correios
+<p align="center">Gostou o projeto? Por favor considere <a href="http://bit.ly/donateITI">uma doação</a> para ajudar a melhorar!
+
 
 ## Lib
 
