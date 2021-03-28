@@ -20,26 +20,14 @@ export default class CustomApp extends App<AppProps> {
           />
           <link rel="stylesheet" href="/css/main.css"></link>
           <title>Rastreamento de pedidos</title>
-          <link
-            rel="icon"
-            href="https://www.guller.com.br/img/favicon.ico?1609019373"
-          />
+          <link rel="icon" href="favicon.ico" />
 
-          <link rel="canonical" href="https://guller.com.br" />
-          <meta
-            property="og:image"
-            content="https://www.guller.com.br/img/guller-logo-1609019373.jpg"
-          />
-          <meta
-            content="https://www.guller.com.br/img/guller-logo-1609019373.jpg"
-            property="og:image"
-          />
+          <link rel="canonical" href="https://rastrearpedidos.com.br/r" />
+          <meta property="og:image" content="images/favicon.png" />
+          <meta content="images/favicon.png" property="og:image" />
 
           <meta property="og:locale" content="pt-BR" />
-          <meta
-            property="og:title"
-            content="Rastreamento de pedidos"
-          />
+          <meta property="og:title" content="Rastreamento de pedidos" />
           <meta
             property="og:description"
             content="Aqui na Lojas Guller Online você encontra roupas, calçados, bolsas, relógios e muito mais em moda feminina e masculina pelos melhores preços. Compre online hoje ..."
@@ -59,7 +47,7 @@ export default class CustomApp extends App<AppProps> {
             content="Guller,loja,online,lojas guller,guller roupas,barato,frete gratis,lojas,melhor,loja,roupas,guler, correio, rastrear, rastreamento, rastreamento correios, rastreamento correio, rastreamento de correios, rastreamento do correios, rastreamento dos correios, rastreamento de correio, sedex rastreamento, rastreamento mercado livre, jadlog rastreamento, codigo rastreamento, rastreamento objeto, rastreamento objetos, código rastreamento, codigo de rastreamento, rastreamento de objetos, rastreamento transportadora, sequoia rastreamento, rastreamento shopee, correios rastreamento fácil"
           />
 
-          <meta property="og:url" content="https://guller.com.br" />
+          <meta property="og:url" content="https://rastrearpedidos.com.br/r" />
           <base href="/" />
           <link href="https://plus.google.com/+guller" rel="publisher" />
           <meta content="index, follow" name="robots" />
@@ -67,20 +55,14 @@ export default class CustomApp extends App<AppProps> {
           <meta content="global" name="distribution" />
           <meta content="general" name="rating" />
           <meta content="website" property="og:type" />
-          <meta
-            content="Rastreamento de pedidos"
-            property="og:site_name"
-          />
+          <meta content="Rastreamento de pedidos" property="og:site_name" />
           <meta content="pt-BR" property="og:locale" />
           <meta content="en-US" property="og:locale:alternate" />
           <meta content="pt" property="og:locale:alternate" />
           <meta content="en_US" property="og:locale:alternate" />
           <meta content="id_ID" property="og:locale:alternate" />
-          <meta
-            content="Rastreamento de pedidos"
-            property="og:title"
-          />
-          <meta content="https://guller.com.br" property="og:url" />
+          <meta content="Rastreamento de pedidos" property="og:title" />
+          <meta content="https://rastrearpedidos.com.br/r" property="og:url" />
           <meta
             content="Aqui na Lojas Guller Online você encontra roupas, calçados, bolsas, relógios e muito mais em moda feminina e masculina pelos melhores preços. Compre online hoje ..."
             property="og:description"
@@ -89,10 +71,7 @@ export default class CustomApp extends App<AppProps> {
           <meta content="@guller" name="twitter:creator" />
           <meta content="guller.com.br" name="twitter:domain" />
 
-          <meta
-            content="https://www.guller.com.br/img/guller-logo-1609019373.jpg"
-            property="og:image"
-          />
+          <meta content="images/favicon.png" property="og:image" />
           <meta content="512" property="og:image:width" />
           <meta content="512" property="og:image:height" />
           <meta content="id" name="geo.country" />

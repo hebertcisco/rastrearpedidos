@@ -4,4 +4,4 @@ User-agent: *
 
 Allow: / 
 
-Sitemap: https://guller.com.br/sitemap.xml
+Sitemap: https://rastrearpedidos.com.br/r/sitemap.xml

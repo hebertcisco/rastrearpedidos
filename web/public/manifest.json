@@ -3,12 +3,12 @@
   "short_name": "Rastreamento de pedidos",
   "icons": [
     {
-      "src": "https://www.guller.com.br/img/favicon.ico?1609019373",
+      "src": "favicon.ico",
       "sizes": "192x192",
       "type": "image/svg"
     },
     {
-      "src": "https://www.guller.com.br/img/favicon.ico?1609019373",
+      "src": "favicon.ico",
       "sizes": "512x512",
       "type": "image/svg"
     }
