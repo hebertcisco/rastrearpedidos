@@ -30,14 +30,26 @@ interface ICode {
   codigo: string | string[];
 }
 interface IRastreio {
-  cidade: string;
-  data: string;
-  dataHora: string;
-  descricao: string;
-  uf: string;
+  cidade?: string;
+  data?: string;
+  dataHora?: string;
+  descricao?: string;
+  uf?: string;
+}
+interface IDestino {
+  cidade?: string;
+  uf?: string;
+}
+interface IRastreios extends IRastreio {
+  cidade?: string;
+  data?: string;
+  dataHora?: string;
+  descricao?: string;
+  uf?: string;
+  destino?: IDestino;
 }
 interface ISeo {
-  title?: string;
+  title?: any;
   canonical?: string;
   og_image?: string;
   description?: string;
@@ -45,4 +57,13 @@ interface ISeo {
   keywords?: string;
   domain?: string;
 }
-export { ISocial, ILink, IProject, IFooter, ICode, IRastreio, ISeo };
+export {
+  ISocial,
+  ILink,
+  IProject,
+  IFooter,
+  ICode,
+  IRastreio,
+  ISeo,
+  IRastreios,
+};
