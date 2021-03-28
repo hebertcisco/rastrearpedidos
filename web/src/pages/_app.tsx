@@ -36,6 +36,33 @@ export default class CustomApp extends App<AppProps> {
           <link rel="manifest" href="manifest.json" />
           <link rel="icon" href="favicon.ico" />
 
+          <link
+            href="images/icon-192x192"
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+          />
+          <link
+            href="images/icon-256x256"
+            rel="icon"
+            type="image/png"
+            sizes="256x256"
+          />
+          <link
+            href="images/icon-384x384"
+            rel="icon"
+            type="image/png"
+            sizes="384x384"
+          />
+          <link
+            href="images/icon-512x512"
+            rel="icon"
+            type="image/png"
+            sizes="512x512"
+          />
+
+          <link rel="apple-touch-icon" href="images/favicon.png"></link>
+
           <meta name="theme-color" content="#3070c6" />
           <meta
             name="description"
