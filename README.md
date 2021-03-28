@@ -4,7 +4,7 @@
  <p align="center">Serviço de rastreamento de objetos integrado aos serviços dos Correios</p>
 </p>
 
-<p align="center">Gostou o projeto? Por favor considere <a href="http://bit.ly/donateITI">uma doação</a> para ajudar a melhorar!
+<p align="center">Gostou o projeto? Por favor considere <a href="http://bit.ly/doarprarastrearpedidos">uma doação</a> para ajudar a melhorar!
 
 
 ## Lib
