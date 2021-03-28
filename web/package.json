@@ -24,7 +24,10 @@
     "sass": "^1.32.8",
     "styled-components": "^5.2.1",
     "typescript-fsa": "^3.0.0",
-    "typescript-fsa-reducers": "^1.2.1"
+    "typescript-fsa-reducers": "^1.2.1",
+    "express": "^4.17.1",
+    "micro-cors": "^0.1.1",
+    "mongodb": "^3.6.1"
   },
   "scripts": {
     "dev": "next",
