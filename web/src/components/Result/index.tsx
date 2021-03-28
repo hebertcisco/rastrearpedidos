@@ -15,7 +15,7 @@ const Result: React.FC<ICode> = ({ codigo }) => {
   async function getTrack() {
     try {
       await axios
-        .get(`https://rastrearpedidos.com.br/api/rastreio/v1/${codigo}`)
+        .get(`https://rastrearpedidos.com.br/api/rastreio/v1?codigo=${codigo}`)
         .then((response: any) => {
           setRastreioData(response.data);
         });
