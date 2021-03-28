@@ -18,17 +18,17 @@ rastreio("LB498113226SE").then(console.log);
 > Curl
 
 ```sh
-curl --location --request GET 'https://rastrearpedidos.com.br/api/rastreio/v1/LB498113226SE'
+curl --location --request GET 'https://api.rastrearpedidos.com.br/api/rastreio/v1?codigo=LB498113226SE'
 ```
 
 > HTTP
 
 ```http
-GET /api/rastreio/v1/LB498113226SE HTTP/1.1
+GET /api/rastreio/v1?codigo=LB498113226SE HTTP/1.1
 Host: rastrearpedidos.now.sh
 ```
 
-> URL: [https://rastrearpedidos.com.br/api/rastreio/v1/LB498113226SE](https://rastrearpedidos.com.br/api/rastreio/v1/LB498113226SE)
+> URL: [https://api.rastrearpedidos.com.br/api/rastreio/v1?codigo=LB498113226SE](https://api.rastrearpedidos.com.br/api/rastreio/v1?codigo=LB498113226SE)
 
 ### Endpoint:
 
