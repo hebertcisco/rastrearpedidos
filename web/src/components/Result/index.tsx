@@ -11,11 +11,19 @@ import styled from "styled-components";
 const Result: React.FC<ICode> = ({ codigo }) => {
   const [rastreioData, setRastreioData] = useState([]);
   const [inError, setInError] = useState(false);
+  const [code, setCode] = useState("");
 
+  React.useEffect(() => {
+    setCode(localStorage.getItem("code"));
+  });
   async function getTrack() {
     try {
       await axios
-        .get(`https://api.rastrearpedidos.com.br/api/rastreio/v1?codigo=${codigo}`)
+        .get(
+          `https://api.rastrearpedidos.com.br/api/rastreio/v1?codigo=${
+            codigo || code
+          }`
+        )
         .then((response: any) => {
           setRastreioData(response.data);
         });
@@ -40,7 +48,7 @@ const Result: React.FC<ICode> = ({ codigo }) => {
       <ContainerResultadoStyled>
         {inError ? (
           <ContainerResultadoStyled>
-            <Header codigo={codigo} />
+            <Header codigo={codigo || code} />
             <ItemStyled>
               <TimelineStyled id="timeline">
                 <SectionStyled>

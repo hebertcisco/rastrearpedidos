@@ -8,11 +8,13 @@ import { useRouter } from "next/router";
 
 export default function Home() {
   const [width, setWidth] = React.useState(0);
+  const [code, setCode] = useState("");
+
   React.useEffect(() => {
     setWidth(window.innerWidth);
+    localStorage.setItem("code", code);
   });
   const router = useRouter();
-  const [code, setCode] = useState("");
 
   const validForm = (code: string) => {
     let valid = false;
