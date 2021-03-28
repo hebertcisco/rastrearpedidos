@@ -30,7 +30,7 @@ export default class CustomApp extends App<AppProps> {
           <meta property="og:title" content="Rastreamento de pedidos" />
           <meta
             property="og:description"
-            content="Aqui na Lojas Guller Online você encontra roupas, calçados, bolsas, relógios e muito mais em moda feminina e masculina pelos melhores preços. Compre online hoje ..."
+            content="Rastreamento de objetos integrado aos serviços dos Correios"
           />
           <link rel="shortcut icon" href="favicon.ico" />
           <link rel="manifest" href="manifest.json" />
@@ -39,17 +39,20 @@ export default class CustomApp extends App<AppProps> {
           <meta name="theme-color" content="#3070c6" />
           <meta
             name="description"
-            content="Aqui na Lojas Guller Online você encontra roupas, calçados, bolsas, relógios e muito mais em moda feminina e masculina pelos melhores preços. Compre online hoje ..."
+            content="Rastreamento de objetos integrado aos serviços dos Correios"
           />
 
           <meta
             name="keywords"
-            content="Guller,loja,online,lojas guller,guller roupas,barato,frete gratis,lojas,melhor,loja,roupas,guler, correio, rastrear, rastreamento, rastreamento correios, rastreamento correio, rastreamento de correios, rastreamento do correios, rastreamento dos correios, rastreamento de correio, sedex rastreamento, rastreamento mercado livre, jadlog rastreamento, codigo rastreamento, rastreamento objeto, rastreamento objetos, código rastreamento, codigo de rastreamento, rastreamento de objetos, rastreamento transportadora, sequoia rastreamento, rastreamento shopee, correios rastreamento fácil"
+            content="rastreamento, rastreamento shopee, correios rastreamento fácil"
           />
 
           <meta property="og:url" content="https://rastrearpedidos.com.br/r" />
           <base href="/" />
-          <link href="https://plus.google.com/+guller" rel="publisher" />
+          <link
+            href="https://plus.google.com/+rastrearpedidos"
+            rel="publisher"
+          />
           <meta content="index, follow" name="robots" />
           <meta content="1 days" name="revisit-after" />
           <meta content="global" name="distribution" />
@@ -64,12 +67,12 @@ export default class CustomApp extends App<AppProps> {
           <meta content="Rastreamento de pedidos" property="og:title" />
           <meta content="https://rastrearpedidos.com.br/r" property="og:url" />
           <meta
-            content="Aqui na Lojas Guller Online você encontra roupas, calçados, bolsas, relógios e muito mais em moda feminina e masculina pelos melhores preços. Compre online hoje ..."
+            content="Rastreamento de objetos integrado aos serviços dos Correios"
             property="og:description"
           />
-          <meta content="@guller" name="twitter:site" />
-          <meta content="@guller" name="twitter:creator" />
-          <meta content="guller.com.br" name="twitter:domain" />
+          <meta content="@rastrearpedidos" name="twitter:site" />
+          <meta content="@rastrearpedidos" name="twitter:creator" />
+          <meta content="rastrearpedidos.com.br" name="twitter:domain" />
 
           <meta content="images/favicon.png" property="og:image" />
           <meta content="512" property="og:image:width" />
