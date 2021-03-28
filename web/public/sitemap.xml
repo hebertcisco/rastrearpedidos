@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://rastrearpedidos.com.br/</loc>
-    <lastmod>2020-12-12</lastmod>
+    <loc>https://rastrearpedidos.com.br/r/</loc>
+    <lastmod>2021-03-13</lastmod>
   </url>
- <url>
-    <loc>https://rastrearpedidos.com.br/sobre</loc>
-    <lastmod>2020-12-12</lastmod>
+  <url>
+    <loc>https://rastrearpedidos.com.br/r/rastreio</loc>
+    <lastmod>2021-03-13</lastmod>
   </url>
-   <url>
-    <loc>https://rastrearpedidos.com.br/politica_de_privacidade</loc>
-    <lastmod>2020-12-12</lastmod>
-  </url>
-   <url>
-    <loc>https://rastrearpedidos.com.br/termos_de_uso</loc>
-    <lastmod>2020-12-12</lastmod>
-  </url>
+
 </urlset>
