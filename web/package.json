@@ -1,5 +1,5 @@
 {
-  "name": "rastrearpedidos_guller",
+  "name": "rastrearpedidos",
   "version": "1.0.0",
   "description": "Aplicação para rastreamento de pedidos online",
   "dependencies": {
