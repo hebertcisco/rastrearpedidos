@@ -4,6 +4,7 @@ const FormData = require("form-data");
 const cheerio = require("cheerio");
 const fetch = require("node-fetch");
 const iconv = require("iconv-lite");
+const icones = require("iconv-lite");
 
 function parseResponse(response) {
   if (!response.ok) {
