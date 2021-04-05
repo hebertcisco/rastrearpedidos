@@ -23,8 +23,8 @@ coverage
 *.lcov
 *sw.js
 *sw.js.map
-*workbox-1d29b11e.js
-*workbox-1d29b11e.js.map
+*workbox-*.js
+*workbox-*.js.map
 # nyc test coverage
 .nyc_output
 
