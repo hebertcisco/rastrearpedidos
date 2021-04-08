@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-const rastreio = require('../lib/index')
+const rastreio = require('rastrearpedidos')
 const codigo = 'LB498113226SE'
 
 try {
