@@ -33,25 +33,27 @@ coverage
 
 # Bower dependency directory (https://bower.io/)
 bower_components
-
+modules/npm/.nyc_output
 # node-waf configuration
 .lock-wscript
-
+modules/npm/lib
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
-
+modules/npm/node_modules
 # Dependency directories
 node_modules/
 jspm_packages/
 
 # TypeScript v1 declaration files
 typings/
-
+modules/composer
 # TypeScript cache
 *.tsbuildinfo
 
 # Optional npm cache directory
 .npm
+modules/npm/yarn.lock
+modules/npm/package-lock.json
 
 # Optional eslint cache
 .eslintcache
