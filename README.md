@@ -37,7 +37,7 @@ Host: rastrearpedidos.now.sh
 
 ### Endpoint:
 
-`api/rastreio/v1/[codigo]`
+`rastreio?codigo=[codigo]`
 
 
 ## Realizando uma consulta via Endpoint do site
@@ -46,5 +46,5 @@ Host: rastrearpedidos.now.sh
 
 ### Endpoint:
 
-`rastreio?codigo=[codigo]`
+`api/rastreio/v1/[codigo]`
 
