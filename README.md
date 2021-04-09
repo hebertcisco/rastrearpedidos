@@ -42,7 +42,7 @@ Host: rastrearpedidos.now.sh
 
 ## Realizando uma consulta via Endpoint do site
 
-> URL: [https://rastrearpedidos.com.br/rastreio/LB498113226SE](https://rastrearpedidos.com.br/rastreio?codigo=LB498113226SE)
+> URL: [https://rastrearpedidos.com.br/rastreio/LB498113226SE](https://rastrearpedidos.com.br/rastreio/LB498113226SE)
 
 ### Endpoint:
 
