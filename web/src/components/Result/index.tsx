@@ -1,39 +1,18 @@
-//import "../../styles/scss/timeline.scss";
-
 import { ICode, IRastreio, IRastreios } from "../../utils/types";
 import React, { useState } from "react";
 
 import Footer from "../Footer";
 import Header from "./header";
-import axios from "axios";
 import styled from "styled-components";
 
-const Result: React.FC<ICode> = ({ codigo }) => {
-  const [rastreioData, setRastreioData] = useState([]);
+interface IRastreiosProps {
+  tracking: IRastreios[];
+  codigo?: ICode;
+}
+const Result: React.FC<IRastreiosProps> = ({ codigo, tracking }) => {
   const [inError, setInError] = useState(false);
-  const [code, setCode] = useState("");
 
-  React.useEffect(() => {
-    setCode(localStorage.getItem("code"));
-  });
-  async function getTrack() {
-    try {
-      await axios
-        .get(
-          `https://api.rastrearpedidos.com.br/api/rastreio/v1?codigo=${
-            codigo || code
-          }`
-        )
-        .then((response: any) => {
-          setRastreioData(response.data);
-        });
-    } catch (err) {
-      console.error(err);
-      setInError(true);
-    }
-  }
-  getTrack();
-  let lastStatus: IRastreio = rastreioData.shift();
+  let lastStatus: IRastreio = tracking.shift();
   let deliveredMessage: string = "Objeto entregue ao destinatário";
 
   function IsDelivered() {
@@ -43,12 +22,12 @@ const Result: React.FC<ICode> = ({ codigo }) => {
   }
   IsDelivered();
 
-  if (rastreioData.length < 1) {
+  if (tracking.length < 1) {
     return (
       <ContainerResultadoStyled>
         {inError ? (
           <ContainerResultadoStyled>
-            <Header codigo={codigo || code} />
+            <Header codigo={codigo} />
             <ItemStyled>
               <TimelineStyled id="timeline">
                 <SectionStyled>
@@ -100,7 +79,7 @@ const Result: React.FC<ICode> = ({ codigo }) => {
               )}
 
               <TimelineStyledAfter>
-                {rastreioData.map((rastreio: IRastreios) => {
+                {tracking.map((rastreio: IRastreios) => {
                   return (
                     <SectionStyled>
                       <SectionStyledTitle>
@@ -138,8 +117,6 @@ const Result: React.FC<ICode> = ({ codigo }) => {
   }
 };
 export default Result;
-
-const HeaderStyled = styled.div``;
 
 const SectionStyledTitle = styled.h3`
   position: -webkit-sticky;

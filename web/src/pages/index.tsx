@@ -3,16 +3,20 @@
 import React, { FormEvent, useState } from "react";
 
 import IconSearch from "../components/IconSearch";
+import createPersistedState from "use-persisted-state";
 import styled from "styled-components";
 import { useRouter } from "next/router";
+
+const useHistoryState = createPersistedState("Tracker@history");
 
 export default function Home() {
   const [width, setWidth] = React.useState(0);
   const [code, setCode] = useState("");
 
+  const [history, setHistory] = useHistoryState<string[]>([]);
+
   React.useEffect(() => {
     setWidth(window.innerWidth);
-    localStorage.setItem("code", code);
   });
   const router = useRouter();
 
@@ -35,7 +39,7 @@ export default function Home() {
     event.preventDefault();
     if (validForm(code)) {
       try {
-        router.push(`/rastreio?codigo=${code}`);
+        router.push(`/rastreio/${code}`);
       } catch {
         return new Error();
       }

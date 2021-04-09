@@ -1,7 +1,8 @@
+import { ICode } from "../../utils/types";
 import React from "react";
 import styled from "styled-components";
 interface IHeader {
-  codigo: string | string[];
+  codigo: ICode;
 }
 
 const Header: React.FC<IHeader> = ({ codigo }) => {
