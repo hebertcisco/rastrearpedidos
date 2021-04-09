@@ -14,7 +14,6 @@ const Result: React.FC<IRastreiosProps> = ({ codigo, tracking }) => {
   const [inError, setInError] = useState(false);
 
   let lastStatus: IRastreio = tracking?.shift();
-  let deliveredMessage: string = "Objeto entregue ao destinatário";
   const Loading = () => {
     return (
       <ContainerResultadoStyled>
@@ -39,8 +38,10 @@ const Result: React.FC<IRastreiosProps> = ({ codigo, tracking }) => {
     );
   };
   function IsDelivered() {
-    if (lastStatus?.descricao === deliveredMessage) {
+    if (lastStatus?.descricao) {
       return true;
+    } else {
+      return false;
     }
   }
   IsDelivered();
@@ -102,7 +103,6 @@ const Result: React.FC<IRastreiosProps> = ({ codigo, tracking }) => {
               ) : (
                 <></>
               )}
-
               <TimelineStyledAfter>
                 {tracking?.map((rastreio: IRastreios) => {
                   return (
@@ -149,10 +149,8 @@ const SectionStyledTitle = styled.h3`
   top: 5rem;
   color: #888;
   margin: 0;
-  font: {
-    size: 1em;
-    weight: 400;
-  }
+  font-weight: 400;
+  font-size: 1em;
   @media (min-width: 62em) {
     font-size: 1.1em;
   }
@@ -163,7 +161,7 @@ const TimelineStyled = styled.div`
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5rem;
+  margin-top: 4rem;
 `;
 const TimelineStyledAfter = styled.div`
   &:after {
@@ -204,9 +202,7 @@ const SectionStyledList = styled.ul`
     padding: 0 0 0 81px;
   }
   &:last-child {
-    margin: {
-      bottom: 0;
-    }
+    margin-bottom: 0;
   }
   &:first-of-type:after {
     content: "";
