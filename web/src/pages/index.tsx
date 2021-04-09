@@ -1,5 +1,3 @@
-//import "../styles/css/main.css";
-
 import React, { FormEvent, useState } from "react";
 
 import IconSearch from "../components/IconSearch";
@@ -12,7 +10,6 @@ export default function Home() {
 
   React.useEffect(() => {
     setWidth(window.innerWidth);
-    localStorage.setItem("code", code);
   });
   const router = useRouter();
 
@@ -35,7 +32,7 @@ export default function Home() {
     event.preventDefault();
     if (validForm(code)) {
       try {
-        router.push(`/rastreio?codigo=${code}`);
+        router.push(`/rastreio/${code}`);
       } catch {
         return new Error();
       }

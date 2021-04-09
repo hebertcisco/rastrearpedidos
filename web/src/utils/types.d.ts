@@ -47,6 +47,8 @@ interface IRastreios extends IRastreio {
   descricao?: string;
   uf?: string;
   destino?: IDestino;
+  code: ICode;
+  isInvalid?: boolean;
 }
 interface ISeo {
   title?: any;
@@ -57,6 +59,7 @@ interface ISeo {
   keywords?: string;
   domain?: string;
 }
+
 export {
   ISocial,
   ILink,

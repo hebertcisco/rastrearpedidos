@@ -1,54 +1,57 @@
-//import "../../styles/scss/timeline.scss";
-
 import { ICode, IRastreio, IRastreios } from "../../utils/types";
 import React, { useState } from "react";
 
 import Footer from "../Footer";
 import Header from "./header";
-import axios from "axios";
+import SkeletonLoader from "tiny-skeleton-loader-react";
 import styled from "styled-components";
 
-const Result: React.FC<ICode> = ({ codigo }) => {
-  const [rastreioData, setRastreioData] = useState([]);
+interface IRastreiosProps {
+  tracking?: IRastreios[];
+  codigo?: ICode;
+}
+const Result: React.FC<IRastreiosProps> = ({ codigo, tracking }) => {
   const [inError, setInError] = useState(false);
-  const [code, setCode] = useState("");
 
-  React.useEffect(() => {
-    setCode(localStorage.getItem("code"));
-  });
-  async function getTrack() {
-    try {
-      await axios
-        .get(
-          `https://api.rastrearpedidos.com.br/api/rastreio/v1?codigo=${
-            codigo || code
-          }`
-        )
-        .then((response: any) => {
-          setRastreioData(response.data);
-        });
-    } catch (err) {
-      console.error(err);
-      setInError(true);
-    }
-  }
-  getTrack();
-  let lastStatus: IRastreio = rastreioData.shift();
-  let deliveredMessage: string = "Objeto entregue ao destinatário";
-
+  let lastStatus: IRastreio = tracking?.shift();
+  const Loading = () => {
+    return (
+      <ContainerResultadoStyled>
+        <Header codigo={codigo} />
+        <ItemStyled>
+          <TimelineStyled id="timeline">
+            <SectionStyled>
+              <SectionStyledTitle>
+                <SkeletonLoader />
+              </SectionStyledTitle>
+              <SectionStyledChild>
+                <SectionStyledList>
+                  <SectionStyledListItem>
+                    <SkeletonLoader />
+                  </SectionStyledListItem>
+                </SectionStyledList>
+              </SectionStyledChild>
+            </SectionStyled>
+          </TimelineStyled>{" "}
+        </ItemStyled>{" "}
+      </ContainerResultadoStyled>
+    );
+  };
   function IsDelivered() {
-    if (lastStatus?.descricao === deliveredMessage) {
+    if (lastStatus?.descricao) {
       return true;
+    } else {
+      return false;
     }
   }
   IsDelivered();
 
-  if (rastreioData.length < 1) {
+  if (tracking?.length < 1) {
     return (
       <ContainerResultadoStyled>
         {inError ? (
           <ContainerResultadoStyled>
-            <Header codigo={codigo || code} />
+            <Header codigo={codigo} />
             <ItemStyled>
               <TimelineStyled id="timeline">
                 <SectionStyled>
@@ -67,7 +70,9 @@ const Result: React.FC<ICode> = ({ codigo }) => {
         ) : (
           <></>
         )}
-        <p>...</p>
+        <span>
+          <Loading />
+        </span>
       </ContainerResultadoStyled>
     );
   } else {
@@ -98,9 +103,8 @@ const Result: React.FC<ICode> = ({ codigo }) => {
               ) : (
                 <></>
               )}
-
               <TimelineStyledAfter>
-                {rastreioData.map((rastreio: IRastreios) => {
+                {tracking?.map((rastreio: IRastreios) => {
                   return (
                     <SectionStyled>
                       <SectionStyledTitle>
@@ -139,18 +143,14 @@ const Result: React.FC<ICode> = ({ codigo }) => {
 };
 export default Result;
 
-const HeaderStyled = styled.div``;
-
 const SectionStyledTitle = styled.h3`
   position: -webkit-sticky;
   position: sticky;
   top: 5rem;
   color: #888;
   margin: 0;
-  font: {
-    size: 1em;
-    weight: 400;
-  }
+  font-weight: 400;
+  font-size: 1em;
   @media (min-width: 62em) {
     font-size: 1.1em;
   }
@@ -161,7 +161,7 @@ const TimelineStyled = styled.div`
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 5rem;
+  margin-top: 4rem;
 `;
 const TimelineStyledAfter = styled.div`
   &:after {
@@ -202,9 +202,7 @@ const SectionStyledList = styled.ul`
     padding: 0 0 0 81px;
   }
   &:last-child {
-    margin: {
-      bottom: 0;
-    }
+    margin-bottom: 0;
   }
   &:first-of-type:after {
     content: "";

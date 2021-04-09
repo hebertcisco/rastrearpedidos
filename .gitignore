@@ -25,6 +25,7 @@ coverage
 *sw.js.map
 *workbox-*.js
 *workbox-*.js.map
+
 # nyc test coverage
 .nyc_output
 
@@ -34,12 +35,15 @@ coverage
 # Bower dependency directory (https://bower.io/)
 bower_components
 modules/npm/.nyc_output
+
 # node-waf configuration
 .lock-wscript
 modules/npm/lib
+
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 modules/npm/node_modules
+
 # Dependency directories
 node_modules/
 jspm_packages/
@@ -47,6 +51,7 @@ jspm_packages/
 # TypeScript v1 declaration files
 typings/
 modules/composer
+
 # TypeScript cache
 *.tsbuildinfo
 
