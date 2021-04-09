@@ -7,13 +7,13 @@ import SkeletonLoader from "tiny-skeleton-loader-react";
 import styled from "styled-components";
 
 interface IRastreiosProps {
-  tracking: IRastreios[];
+  tracking?: IRastreios[];
   codigo?: ICode;
 }
 const Result: React.FC<IRastreiosProps> = ({ codigo, tracking }) => {
   const [inError, setInError] = useState(false);
 
-  let lastStatus: IRastreio = tracking.shift();
+  let lastStatus: IRastreio = tracking?.shift();
   let deliveredMessage: string = "Objeto entregue ao destinatário";
   const Loading = () => {
     return (
@@ -45,7 +45,7 @@ const Result: React.FC<IRastreiosProps> = ({ codigo, tracking }) => {
   }
   IsDelivered();
 
-  if (tracking.length < 1) {
+  if (tracking?.length < 1) {
     return (
       <ContainerResultadoStyled>
         {inError ? (
@@ -104,7 +104,7 @@ const Result: React.FC<IRastreiosProps> = ({ codigo, tracking }) => {
               )}
 
               <TimelineStyledAfter>
-                {tracking.map((rastreio: IRastreios) => {
+                {tracking?.map((rastreio: IRastreios) => {
                   return (
                     <SectionStyled>
                       <SectionStyledTitle>

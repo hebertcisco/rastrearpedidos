@@ -2,6 +2,16 @@
   "name": "rastrearpedidos",
   "version": "1.0.0",
   "description": "Aplicação para rastreamento de pedidos online",
+  "scripts": {
+    "dev": "next",
+    "export": "next export",
+    "build": "next build",
+    "start": "next start",
+    "start:prod": "next start -p $PORT",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "fix": "eslint . --ext .js --fix"
+  },
   "dependencies": {
     "@vercel/node": "^1.8.4",
     "@zeit/next-css": "^1.0.1",
@@ -57,15 +67,6 @@
     "redux-devtools-extension": "^2.13.8",
     "terser-webpack-plugin": "^5.1.1",
     "typescript": "^4.2.4"
-  },
-  "scripts": {
-    "dev": "next",
-    "build": "next build && next export",
-    "start": "next start",
-    "start:prod": "next start -p $PORT",
-    "test": "jest",
-    "test:watch": "jest --watch",
-    "fix": "eslint . --ext .js --fix"
   },
   "repository": {
     "type": "git",
