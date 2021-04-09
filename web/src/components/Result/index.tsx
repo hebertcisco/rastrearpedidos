@@ -3,6 +3,7 @@ import React, { useState } from "react";
 
 import Footer from "../Footer";
 import Header from "./header";
+import SkeletonLoader from "tiny-skeleton-loader-react";
 import styled from "styled-components";
 
 interface IRastreiosProps {
@@ -14,7 +15,29 @@ const Result: React.FC<IRastreiosProps> = ({ codigo, tracking }) => {
 
   let lastStatus: IRastreio = tracking.shift();
   let deliveredMessage: string = "Objeto entregue ao destinatário";
-
+  const Loading = () => {
+    return (
+      <ContainerResultadoStyled>
+        <Header codigo={codigo} />
+        <ItemStyled>
+          <TimelineStyled id="timeline">
+            <SectionStyled>
+              <SectionStyledTitle>
+                <SkeletonLoader />
+              </SectionStyledTitle>
+              <SectionStyledChild>
+                <SectionStyledList>
+                  <SectionStyledListItem>
+                    <SkeletonLoader />
+                  </SectionStyledListItem>
+                </SectionStyledList>
+              </SectionStyledChild>
+            </SectionStyled>
+          </TimelineStyled>{" "}
+        </ItemStyled>{" "}
+      </ContainerResultadoStyled>
+    );
+  };
   function IsDelivered() {
     if (lastStatus?.descricao === deliveredMessage) {
       return true;
@@ -46,7 +69,9 @@ const Result: React.FC<IRastreiosProps> = ({ codigo, tracking }) => {
         ) : (
           <></>
         )}
-        <p>...</p>
+        <span>
+          <Loading />
+        </span>
       </ContainerResultadoStyled>
     );
   } else {

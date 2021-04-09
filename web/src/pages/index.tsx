@@ -1,19 +1,12 @@
-//import "../styles/css/main.css";
-
 import React, { FormEvent, useState } from "react";
 
 import IconSearch from "../components/IconSearch";
-import createPersistedState from "use-persisted-state";
 import styled from "styled-components";
 import { useRouter } from "next/router";
-
-const useHistoryState = createPersistedState("Tracker@history");
 
 export default function Home() {
   const [width, setWidth] = React.useState(0);
   const [code, setCode] = useState("");
-
-  const [history, setHistory] = useHistoryState<string[]>([]);
 
   React.useEffect(() => {
     setWidth(window.innerWidth);
