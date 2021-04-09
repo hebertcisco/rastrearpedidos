@@ -1,8 +1,8 @@
-import { GetStaticPaths, GetStaticProps } from "next";
-import { ICode, IRastreios } from "../../utils/types";
+import { GetStaticPaths, GetStaticProps } from 'next';
+import { ICode, IRastreios } from '../../utils/types';
 
-import Result from "../../components/Result";
-import axios from "axios";
+import Result from '../../components/Result';
+import axios from 'axios';
 
 interface IRastreiosProps {
   tracking: IRastreios[];
@@ -34,7 +34,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
 export const getStaticPaths: GetStaticPaths = async () => {
   return {
-    fallback: "blocking",
+    fallback: true,
     paths: [],
   };
 };
