@@ -1,0 +1,22 @@
+{
+    "name": "rastrearpedidos",
+    "version": "1.0.0",
+    "description": "Aplicação para rastreamento de pedidos online",
+    "main": "web/src/pages/index.tsx",
+    "scripts": {
+        "test": "yarn --cwd ./web test",
+        "start": "yarn --cwd ./web dev",
+        "build": "yarn --cwd ./web build",
+        "install": "yarn --cwd ./web install"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/hebertcisco/rastrearpedidos.git"
+    },
+    "author": "Hebert F. Barros",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/hebertcisco/rastrearpedidos/issues"
+    },
+    "homepage": "https://github.com/hebertcisco/rastrearpedidos#readme"
+}
