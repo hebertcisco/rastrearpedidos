@@ -4,8 +4,7 @@
  <p align="center">Serviço de rastreamento de objetos integrado aos serviços dos Correios</p>
 </p>
 
-<p align="center">Gostou o projeto? Por favor considere <a href="http://bit.ly/doarprarastrearpedidos">uma doação</a> para ajudar a melhorar!
-
+<p align="center">Gostou o projeto? Por favor considere <a href="https://github.com/hebertcisco/rastrearpedidos/blob/develop/.github/patreon.md">ser um apoiador</a> e receba brindes exclusivos!
 
 ## Lib
 
@@ -39,7 +38,6 @@ Host: rastrearpedidos.now.sh
 
 `rastreio?codigo=[codigo]`
 
-
 ## Realizando uma consulta via Endpoint do site
 
 > URL: [https://rastrearpedidos.com.br/rastreio/LB498113226SE](https://rastrearpedidos.com.br/rastreio/LB498113226SE)
@@ -47,4 +45,3 @@ Host: rastrearpedidos.now.sh
 ### Endpoint:
 
 `api/rastreio/v1/[codigo]`
-
