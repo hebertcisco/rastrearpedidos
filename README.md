@@ -4,7 +4,7 @@
  <p align="center">Serviço de rastreamento de objetos integrado aos serviços dos Correios</p>
 </p>
 
-<p align="center">Gostou o projeto? Por favor considere <a href="https://github.com/hebertcisco/rastrearpedidos/blob/develop/.github/patreon.md">ser um apoiador</a> e receba brindes exclusivos!
+<p align="center">Gostou o projeto? Por favor considere <a href="https://github.com/hebertcisco/hebertcisco/blob/main/.github/patreon.md">ser um apoiador</a> e receba brindes exclusivos!
 
 ## Lib
 
