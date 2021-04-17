@@ -19,17 +19,24 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const { code } = params;
 
   if (code.length < 13) {
-    return { props: {} };
+    return { props: { error: "Código precisa ter mais de 13 carácteres!" } };
   }
 
-  const { data } = await axios.get<IRastreios[]>(
-    `https://api.rastrearpedidos.com.br/api/rastreio/v1?codigo=${code}`
-  );
+  try {
+    const { data } = await axios.get<IRastreios[]>(
+      `https://api.rastrearpedidos.com.br/api/rastreio/v1?codigo=${code}`
+    );
 
-  return {
-    props: { tracking: data, code: code },
-    revalidate: 60,
-  };
+    return {
+      props: { tracking: data, code: code },
+      revalidate: 60,
+    };
+  } catch (err) {
+    return {
+      props: { tracking: { error: err?.message }, code: code },
+      revalidate: 60,
+    };
+  }
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {

@@ -46,7 +46,7 @@ const Result: React.FC<IRastreiosProps> = ({ codigo, tracking }) => {
   }
   IsDelivered();
 
-  if (tracking?.length < 1) {
+  if (tracking[0]?.error) {
     return (
       <ContainerResultadoStyled>
         {inError ? (
@@ -59,7 +59,8 @@ const Result: React.FC<IRastreiosProps> = ({ codigo, tracking }) => {
                   <SectionStyledChild>
                     <SectionStyledList>
                       <SectionStyledListItem>
-                        Código de rastreio incorreto ou inexistente 🥵
+                        {tracking[0].error?.message ||
+                          "Código de rastreio incorreto ou inexistente 🥵"}
                       </SectionStyledListItem>
                     </SectionStyledList>
                   </SectionStyledChild>
@@ -83,27 +84,7 @@ const Result: React.FC<IRastreiosProps> = ({ codigo, tracking }) => {
 
           <ItemStyled>
             <TimelineStyled id="timeline">
-              {IsDelivered() ? (
-                <SectionStyled>
-                  <SectionStyledTitle>
-                    {lastStatus.data.slice(0, 5)}
-                  </SectionStyledTitle>
-                  <SectionStyledChild>
-                    <SectionStyledList>
-                      <SectionStyledListItem>
-                        Seu pedido foi entregue 🙌
-                      </SectionStyledListItem>
-                      <SectionStyledListItem>{`${lastStatus.cidade} / ${lastStatus.uf}`}</SectionStyledListItem>
-                      <SectionStyledListItem>
-                        {lastStatus.dataHora}
-                      </SectionStyledListItem>
-                    </SectionStyledList>
-                  </SectionStyledChild>
-                </SectionStyled>
-              ) : (
-                <></>
-              )}
-              <TimelineStyledAfter>
+              <SectionStyled>
                 {tracking?.map((rastreio: IRastreios) => {
                   return (
                     <SectionStyled>
@@ -132,7 +113,7 @@ const Result: React.FC<IRastreiosProps> = ({ codigo, tracking }) => {
                     </SectionStyled>
                   );
                 })}
-              </TimelineStyledAfter>
+              </SectionStyled>
             </TimelineStyled>
           </ItemStyled>
         </ContainerResultadoStyled>
@@ -162,13 +143,11 @@ const TimelineStyled = styled.div`
   margin-left: auto;
   margin-right: auto;
   margin-top: 4rem;
-`;
-const TimelineStyledAfter = styled.div`
   &:after {
     content: "";
     width: 2px;
     position: absolute;
-    top: 0.5rem;
+    top: 0.8rem;
     bottom: 0rem;
     left: 60px;
     z-index: 1;

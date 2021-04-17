@@ -29,12 +29,16 @@ interface IFooter {
 interface ICode {
   codigo: string | string[];
 }
+interface IError {
+  message?: any;
+}
 interface IRastreio {
   cidade?: string;
   data?: string;
   dataHora?: string;
   descricao?: string;
   uf?: string;
+  error?: IError;
 }
 interface IDestino {
   cidade?: string;
