@@ -2,6 +2,10 @@ import App from "next/app";
 import Head from "next/head";
 import React from "react";
 
+import 'tailwindcss/tailwind.css';
+import "../styles/css/styles.css";
+import "../styles/css/global.css";
+
 type AppProps = {
   Component: React.ReactNode;
   pageProps: any;
@@ -22,7 +26,7 @@ export default class CustomApp extends App<AppProps> {
           <title>Rastreamento de pedidos</title>
           <link rel="icon" href="favicon.ico" />
 
-          <link rel="canonical" href="https://rastrearpedidos.com.br/r" />
+          <link rel="canonical" href="https://rastrearpedidos.com.br" />
           <meta property="og:image" content="images/favicon.png" />
           <meta content="images/favicon.png" property="og:image" />
 
@@ -74,7 +78,7 @@ export default class CustomApp extends App<AppProps> {
             content="rastreamento, rastreamento shopee, correios rastreamento fácil"
           />
 
-          <meta property="og:url" content="https://rastrearpedidos.com.br/r" />
+          <meta property="og:url" content="https://rastrearpedidos.com.br" />
           <base href="/" />
           <link
             href="https://plus.google.com/+rastrearpedidos"
@@ -92,7 +96,7 @@ export default class CustomApp extends App<AppProps> {
           <meta content="en_US" property="og:locale:alternate" />
           <meta content="id_ID" property="og:locale:alternate" />
           <meta content="Rastreamento de pedidos" property="og:title" />
-          <meta content="https://rastrearpedidos.com.br/r" property="og:url" />
+          <meta content="https://rastrearpedidos.com.br" property="og:url" />
           <meta
             content="Rastreamento de objetos integrado aos serviços dos Correios"
             property="og:description"
