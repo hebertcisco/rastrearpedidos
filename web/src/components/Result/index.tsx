@@ -62,8 +62,8 @@ const Result: React.FC<IRastreiosProps> = ({ codigo, tracking }) => {
                                 >
                                   {result.data}
                                 </a>
-                                <a
-                                  href="#"
+                                <span
+                                   
                                   className="my-0.5 relative inline-flex items-center bg-white rounded-full border border-gray-300 px-3 py-0.5 text-sm"
                                 >
                                   <div className="absolute flex-shrink-0 flex items-center justify-center">
@@ -75,7 +75,7 @@ const Result: React.FC<IRastreiosProps> = ({ codigo, tracking }) => {
                                   <div className="ml-3.5 font-medium text-gray-900">
                                     {codigo}
                                   </div>
-                                </a>
+                                </span>
                               </div>
                               <span className="whitespace-nowrap text-sm">
                                 {`${result?.dataHora}`}
