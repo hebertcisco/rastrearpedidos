@@ -2,7 +2,7 @@ import App from "next/app";
 import Head from "next/head";
 import React from "react";
 
-import 'tailwindcss/tailwind.css';
+import "tailwindcss/tailwind.css";
 import "../styles/css/styles.css";
 import "../styles/css/global.css";
 
@@ -23,7 +23,7 @@ export default class CustomApp extends App<AppProps> {
             rel="stylesheet"
           />
           <link rel="stylesheet" href="/css/main.css"></link>
-          <title>Rastreamento de pedidos</title>
+          <title>Rastrear Pedidos</title>
           <link rel="icon" href="favicon.ico" />
 
           <link rel="canonical" href="https://rastrearpedidos.com.br" />
@@ -31,7 +31,7 @@ export default class CustomApp extends App<AppProps> {
           <meta content="images/favicon.png" property="og:image" />
 
           <meta property="og:locale" content="pt-BR" />
-          <meta property="og:title" content="Rastreamento de pedidos" />
+          <meta property="og:title" content="Rastrear Pedidos" />
           <meta
             property="og:description"
             content="Rastreamento de objetos integrado aos serviços dos Correios"
@@ -89,13 +89,13 @@ export default class CustomApp extends App<AppProps> {
           <meta content="global" name="distribution" />
           <meta content="general" name="rating" />
           <meta content="website" property="og:type" />
-          <meta content="Rastreamento de pedidos" property="og:site_name" />
+          <meta content="Rastrear Pedidos" property="og:site_name" />
           <meta content="pt-BR" property="og:locale" />
           <meta content="en-US" property="og:locale:alternate" />
           <meta content="pt" property="og:locale:alternate" />
           <meta content="en_US" property="og:locale:alternate" />
           <meta content="id_ID" property="og:locale:alternate" />
-          <meta content="Rastreamento de pedidos" property="og:title" />
+          <meta content="Rastrear Pedidos" property="og:title" />
           <meta content="https://rastrearpedidos.com.br" property="og:url" />
           <meta
             content="Rastreamento de objetos integrado aos serviços dos Correios"
