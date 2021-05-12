@@ -8,24 +8,35 @@ interface IHeader {
 }
 
 const Header: React.FC<IHeader> = ({ codigo }) => {
+  const [width, setWidth] = React.useState(0);
+  React.useEffect(() => {
+    setWidth(window.innerWidth);
+  });
   return (
     <HeaderStyled>
       <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-        <nav className="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
-          <NavLinkStyled
-            href={"https://github.com/hebertcisco/rastrearpedidos"}
-          >
-            Github
-          </NavLinkStyled>
-          <NavLinkStyled
-            href={`https://api.rastrearpedidos.com.br/api/rastreio/v1?codigo=${codigo}`}
-          >
-            API
-          </NavLinkStyled>
-          <small>
-            Resultado para: <code>{codigo}</code>
-          </small>
-        </nav>
+        {width > 800 ? (
+          <>
+            <nav className="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+              <NavLinkStyled
+                href={"https://github.com/hebertcisco/rastrearpedidos"}
+              >
+                Github
+              </NavLinkStyled>
+              <NavLinkStyled
+                href={`https://api.rastrearpedidos.com.br/api/rastreio/v1?codigo=${codigo}`}
+              >
+                API
+              </NavLinkStyled>
+              <small>
+                Resultado para: <code>{codigo}</code>
+              </small>
+            </nav>
+          </>
+        ) : (
+          <></>
+        )}
+
         <LogoStyled href={"/"}>
           <img
             src="images/logo_w.png"
@@ -33,9 +44,15 @@ const Header: React.FC<IHeader> = ({ codigo }) => {
             alt="logo"
           />
         </LogoStyled>
-        <div className="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
-          <Donate />
-        </div>
+        {width > 800 ? (
+          <>
+            <div className="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+              <Donate />
+            </div>
+          </>
+        ) : (
+          <></>
+        )}
       </div>
     </HeaderStyled>
   );
