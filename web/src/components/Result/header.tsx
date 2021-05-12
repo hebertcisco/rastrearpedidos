@@ -1,84 +1,87 @@
 import { ICode } from "../../utils/types";
 import React from "react";
-import styled from "styled-components";
+import Donate from "../Donate";
+
+import tw from "tailwind-styled-components";
 interface IHeader {
   codigo: ICode;
 }
 
 const Header: React.FC<IHeader> = ({ codigo }) => {
+  const [width, setWidth] = React.useState(0);
+  React.useEffect(() => {
+    setWidth(window.innerWidth);
+  });
   return (
-    <HeaderStyled className="header">
-      <a href="/">
-        <LogoStyled src={"images/logo_w.png"} alt={"logo"} />
-      </a>
-      <TitleStyled>Histórico de rastreamento</TitleStyled>
-      {codigo ? (
-        <SubTitleStyled>
-          Resultado do rastreamento do pedido <code>{codigo}</code>
-        </SubTitleStyled>
-      ) : (
-        <></>
-      )}
+    <HeaderStyled>
+      <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        {width > 800 ? (
+          <>
+            <nav className="flex lg:w-2/5 flex-wrap items-center text-base md:ml-auto">
+              <NavLinkStyled
+                href={"https://github.com/hebertcisco/rastrearpedidos"}
+              >
+                Github
+              </NavLinkStyled>
+              <NavLinkStyled
+                href={`https://api.rastrearpedidos.com.br/api/rastreio/v1?codigo=${codigo}`}
+              >
+                API
+              </NavLinkStyled>
+              <small>
+                Resultado para: <code>{codigo}</code>
+              </small>
+            </nav>
+          </>
+        ) : (
+          <></>
+        )}
+
+        <LogoStyled href={"/"}>
+          <img
+            src="images/logo_w.png"
+            style={{ height: 40, marginTop: 10, marginBottom: 10 }}
+            alt="logo"
+          />
+        </LogoStyled>
+        {width > 800 ? (
+          <>
+            <div className="lg:w-2/5 inline-flex lg:justify-end ml-5 lg:ml-0">
+              <Donate />
+            </div>
+          </>
+        ) : (
+          <></>
+        )}
+      </div>
     </HeaderStyled>
   );
 };
 export default Header;
-const LogoStyled = styled.img`
-  width: 350px;
-  @media (max-width: 375px) {
-    width: 100px;
-  }
+
+const HeaderStyled = tw.header`
+  text-gray-100 
+  bg-gray-900 
+  body-font 
+  shadow w-full
 `;
-const SubTitleStyled = styled.h2`
-  font-weight: 400;
-  font-size: 1.1em;
-  color: #cfd7de;
-  max-width: 30rem;
-  margin: auto;
+const LogoStyled = tw.a`
+  flex 
+  order-first 
+  lg:order-none 
+  lg:w-1/5 
+  title-font 
+  font-medium 
+  items-center 
+  lg:items-center 
+  lg:justify-center 
+  mb-4 md:mb-0
 `;
-const TitleStyled = styled.h1`
-  margin-top: 0.8rem;
-  margin-bottom: 0.5rem;
-  font-weight: 200;
-  font-size: 1.6em;
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  @media (min-width: 62em) {
-    font-size: 1.9em;
-    letter-spacing: 0.2rem;
-  }
-`;
-const HeaderStyled = styled.header`
-  height: auto;
-  text-align: center;
-  background: #101010;
-  color: ghostwhite;
-  padding: 2.3rem 1rem 2.3rem 1rem;
-  position: relative;
-  &:after {
-    content: "";
-    position: absolute;
-    bottom: -5rem;
-    left: 0rem;
-    height: 5.1rem;
-    display: block;
-    width: 100%;
-    z-index: 300;
-    background: -moz-linear-gradient(
-      top,
-      rgba(255, 255, 255, 1) 20%,
-      rgba(255, 255, 255, 0) 100%
-    ); /* FF3.6-15 */
-    background: -webkit-linear-gradient(
-      top,
-      rgba(255, 255, 255, 1) 20%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 1) 20%,
-      rgba(255, 255, 255, 0) 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
-  }
+const NavLinkStyled = tw.a`
+  mr-5 
+  hover:text-gray-300 
+  cursor-pointer 
+  border-b 
+  border-transparent 
+  hover:border-indigo-600
 `;
