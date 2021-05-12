@@ -10,19 +10,6 @@ interface IRastreiosProps {
   codigo?: ICode;
 }
 const Result: React.FC<IRastreiosProps> = ({ codigo, tracking }) => {
-  const [inError, setInError] = useState(false);
-
-  let lastStatus: IRastreio = tracking?.shift();
-
-  function IsDelivered() {
-    if (lastStatus?.descricao) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-  IsDelivered();
-
   if (tracking[0]?.error) {
     return <></>;
   } else {
@@ -48,8 +35,8 @@ const Result: React.FC<IRastreiosProps> = ({ codigo, tracking }) => {
                             {result.data}
                           </h1>
                         </div>
-                        <div className="order-1 bg-gray-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                          <h3 className="mb-3 font-bold text-gray-800 text-xl">
+                        <div className="order-1 bg-yellow-300 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                          <h3 className="mb-3 font-bold text-blue-600 text-xl">
                             {`${result?.dataHora}`}
                           </h3>
                           <p className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">
@@ -73,8 +60,8 @@ const Result: React.FC<IRastreiosProps> = ({ codigo, tracking }) => {
                             {result.data}
                           </h1>
                         </div>
-                        <div className="order-1 bg-red-400 rounded-lg shadow-xl w-5/12 px-6 py-4">
-                          <h3 className="mb-3 font-bold text-white text-xl">
+                        <div className="order-1 bg-blue-600 rounded-lg shadow-xl w-5/12 px-6 py-4">
+                          <h3 className="mb-3 font-bold text-yellow-300 text-xl">
                             {" "}
                             {`${result?.dataHora}`}{" "}
                           </h3>

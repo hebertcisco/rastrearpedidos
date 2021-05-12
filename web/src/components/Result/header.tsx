@@ -26,7 +26,7 @@ const Header: React.FC<IHeader> = ({ codigo }) => {
             Resultado para: <code>{codigo}</code>
           </small>
         </nav>
-        <LogoStyled href={"/"}> 
+        <LogoStyled href={"/"}>
           <img
             src="images/logo_w.png"
             style={{ height: 40, marginTop: 10, marginBottom: 10 }}
@@ -62,7 +62,7 @@ const LogoStyled = tw.a`
 `;
 const NavLinkStyled = tw.a`
   mr-5 
-  hover:text-gray-900 
+  hover:text-gray-300 
   cursor-pointer 
   border-b 
   border-transparent 
