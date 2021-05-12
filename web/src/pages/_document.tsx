@@ -47,7 +47,11 @@ export default class CustomDocument extends Document<DocumentProps> {
           />
           {/* We call the function above to inject the contents of the script tag */}
           <script dangerouslySetInnerHTML={this.setGoogleTags()} />
-
+          <script
+            data-ad-client="ca-pub-3410052543265646"
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+          ></script>
           <></>
         </Head>
         <body>
