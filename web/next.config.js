@@ -1,12 +1,12 @@
-require("dotenv").config();
+//require("dotenv").config();
 
-const withPWA = require("next-pwa");
-const runtimeCaching = require("next-pwa/cache");
-const path = require("path");
+//const withPWA = require("next-pwa");
+//const runtimeCaching = require("next-pwa/cache");
+//const path = require("path");
 
-const prod = process.env.NODE_ENV === "production";
+//const prod = process.env.NODE_ENV === "production";
 
-module.exports = withPWA({
+/*module.exports = withPWA({
   env: {
     WEB_URI: process.env.WEB_URI,
   },
@@ -38,3 +38,11 @@ module.exports = withPWA({
   assetPrefix: process.env.BASE_PATH || "",
   basePath: process.env.BASE_PATH || "",
 });
+*/
+
+module.exports = {
+  env: {
+    WEB_URI: process.env.WEB_URI,
+  },
+
+}
