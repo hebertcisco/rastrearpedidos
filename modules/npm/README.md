@@ -57,7 +57,7 @@ Pra usar em seu projeto node importe e chame o `rastreio` passando o código de 
 
 ```js
 const rastreio = require("rastrearpedidos");
-rastreio("LB498113226SE").then(console.log);
+rastreio("OM728899305BR").then(console.log);
 ```
 
 Assim irá retornar uma `Array` de objetos mostrando o andamento do pedido com o seguinte formato:

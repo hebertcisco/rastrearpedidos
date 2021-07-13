@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 const rastreio = require('../lib/index')
-const codigo = 'LB498113226SE'
+const codigo = 'OM728899305BR'
 
 try {
   //rastreio(codigo).then(console.log)

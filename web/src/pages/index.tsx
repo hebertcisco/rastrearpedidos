@@ -76,7 +76,7 @@ export default function Home() {
               </button>
             </div>
           </div>
-          <span className="info">ex. LB498113226SE</span>
+          <span className="info">ex. OM728899305BR</span>
         </form>
       </div>
     </>

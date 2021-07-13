@@ -15,7 +15,7 @@
 
 ```js
 const rastreio = require("rastrearpedidos");
-rastreio("LB498113226SE").then(console.log);
+rastreio("OM728899305BR").then(console.log);
 ```
 
 ## Realizando uma consulta via Endpoint da API
@@ -23,17 +23,17 @@ rastreio("LB498113226SE").then(console.log);
 > Curl
 
 ```sh
-curl --location --request GET 'https://api.rastrearpedidos.com.br/api/rastreio/v1?codigo=LB498113226SE'
+curl --location --request GET 'https://api.rastrearpedidos.com.br/api/rastreio/v1?codigo=OM728899305BR'
 ```
 
 > HTTP
 
 ```http
-GET /api/rastreio/v1?codigo=LB498113226SE HTTP/1.1
+GET /api/rastreio/v1?codigo=OM728899305BR HTTP/1.1
 Host: rastrearpedidos.now.sh
 ```
 
-> URL: [https://api.rastrearpedidos.com.br/api/rastreio/v1?codigo=LB498113226SE](https://api.rastrearpedidos.com.br/api/rastreio/v1?codigo=LB498113226SE)
+> URL: [https://api.rastrearpedidos.com.br/api/rastreio/v1?codigo=OM728899305BR](https://api.rastrearpedidos.com.br/api/rastreio/v1?codigo=OM728899305BR)
 
 ### Endpoint:
 
@@ -41,7 +41,7 @@ Host: rastrearpedidos.now.sh
 
 ## Realizando uma consulta via Endpoint do site
 
-> URL: [https://rastrearpedidos.com.br/rastreio/LB498113226SE](https://rastrearpedidos.com.br/rastreio/LB498113226SE)
+> URL: [https://rastrearpedidos.com.br/rastreio/OM728899305BR](https://rastrearpedidos.com.br/rastreio/OM728899305BR)
 
 ### Endpoint:
 
